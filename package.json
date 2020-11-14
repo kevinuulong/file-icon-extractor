@@ -1,0 +1,19 @@
+{
+  "name": "program-icon-extractor",
+  "version": "1.0.0",
+  "description": "Extract icons from programs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinuulong/program-icon-extractor.git"
+  },
+  "author": "Kevin Long <kevinuulong@gmail.com> (https://kevinuulong.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevinuulong/program-icon-extractor/issues"
+  },
+  "homepage": "https://github.com/kevinuulong/program-icon-extractor#readme"
+}
