@@ -1,6 +1,6 @@
 {
   "name": "program-icon-extractor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extract icons from programs.",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kevinuulong/program-icon-extractor/issues"
   },
-  "homepage": "https://github.com/kevinuulong/program-icon-extractor#readme"
+  "homepage": "https://github.com/kevinuulong/program-icon-extractor#readme",
+  "dependencies": {
+    "node-powershell": "^4.0.0"
+  }
 }
