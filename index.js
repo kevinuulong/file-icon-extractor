@@ -7,8 +7,13 @@ const shell = require('node-powershell');
 // }
 
 // Test Cases
-// toBmp("C:\\Users\\Kevin Long\\AppData\\Local\\slack\\slack.exe", "C:\\users\\Kevin Long\\Documents\\slack.bmp");
+// toBmp("C:\Users\eld-longkw\AppData\Local\slack\\slack.exe", "C:\\users\\eld-longkw\\Documents\\slack.bmp");
 // toBmps(obj);
+// toPng("C:\\Users\\eld-longkw\\AppData\\Local\\slack\\slack.exe", "C:\\users\\eld-longkw\\Documents\\slack.png")
+
+// TODO:
+// Collapse this into two functions that take an optional filetype
+// May also want to make it so that only a directory is required for the output
 
 function registerShell() {
     return new shell({
@@ -37,6 +42,36 @@ function toBmps(obj) {
     if (programPaths.length == destinationPaths.length) {
         for (i = 0; i < programPaths.length; i++) {
             ps.addCommand(`[System.Drawing.Icon]::ExtractAssociatedIcon('${programPaths[i]}').ToBitmap().Save('${destinationPaths[i]}')`)
+        }
+    }
+    ps.invoke().then(output => {
+        console.log(output);
+    }).catch(err => {
+        console.log(err);
+        ps.dispose();
+    });
+}
+
+function toPng(programPath, destinationPath) {
+    ps = registerShell();
+    ps.addCommand(`Add-Type -AssemblyName System.Drawing`)
+    ps.addCommand(`[System.Drawing.Icon]::ExtractAssociatedIcon('${programPath}').ToBitmap().Save('${destinationPath}','PNG')`)
+    ps.invoke().then(output => {
+        console.log(output);
+    }).catch(err => {
+        console.log(err);
+        ps.dispose();
+    });
+}
+
+function toPngs(obj) {
+    ps = registerShell();
+    ps.addCommand(`Add-Type -AssemblyName System.Drawing`)
+    var programPaths = Object.keys(obj),
+        destinationPaths = Object.values(obj);
+    if (programPaths.length == destinationPaths.length) {
+        for (i = 0; i < programPaths.length; i++) {
+            ps.addCommand(`[System.Drawing.Icon]::ExtractAssociatedIcon('${programPaths[i]}').ToBitmap().Save('${destinationPaths[i]}','PNG')`)
         }
     }
     ps.invoke().then(output => {
