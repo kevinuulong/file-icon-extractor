@@ -1,21 +1,21 @@
 {
-  "name": "program-icon-extractor",
+  "name": "file-icon-extractor",
   "version": "1.0.1",
-  "description": "Extract icons from programs.",
+  "description": "Extract icons from files.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevinuulong/program-icon-extractor.git"
+    "url": "git+https://github.com/kevinuulong/file-icon-extractor.git"
   },
   "author": "Kevin Long <kevinuulong@gmail.com> (https://kevinuulong.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kevinuulong/program-icon-extractor/issues"
+    "url": "https://github.com/kevinuulong/file-icon-extractor/issues"
   },
-  "homepage": "https://github.com/kevinuulong/program-icon-extractor#readme",
+  "homepage": "https://github.com/kevinuulong/file-icon-extractor#readme",
   "dependencies": {
     "node-powershell": "^4.0.0"
   }

@@ -9,7 +9,7 @@ const path = require('path');
 
 // Test Cases
 // extract("C:\\Users\\USERNAME\\AppData\\Local\\slack\\slack.exe", "C:\\Users\\USERNAME\\Documents", "png")
-// extract(programs, "C:\\Users\\USERNAME\\Documents\\GitHub\\program-icon-extractor\\output", "png")
+// extract(programs, "C:\\Users\\USERNAME\\Documents\\GitHub\\file-icon-extractor\\output", "png")
 
 function registerShell() {
 	return new shell({
