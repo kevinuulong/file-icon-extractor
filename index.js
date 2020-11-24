@@ -1,15 +1,6 @@
+'use-strict';
 const shell = require('node-powershell');
 const path = require('path');
-
-// Example Array Format
-// var programs = [
-// 	"C:\\Users\\USERNAME\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
-// 	"C:\\Users\\USERNAME\\AppData\\Local\\slack\\slack.exe"
-// ]
-
-// Test Cases
-// extract("C:\\Users\\USERNAME\\AppData\\Local\\slack\\slack.exe", "C:\\Users\\USERNAME\\Documents", "png")
-// extract(programs, "C:\\Users\\USERNAME\\Documents\\GitHub\\file-icon-extractor\\output", "png")
 
 function registerShell() {
 	return new shell({
@@ -18,12 +9,11 @@ function registerShell() {
 	});
 }
 
-function extract(programPath, destinationPath, format = "jpeg") {
-	const programPaths = programPath => [].concat(programPath)
-	console.log(programPaths(programPath));
-	ps = registerShell();
+module.export = function extract(filePath, destinationPath, format = "png") {
+	const filePaths = filePath => [].concat(filePath),
+		ps = registerShell();
 	ps.addCommand(`Add-Type -AssemblyName System.Drawing`)
-	programPaths(programPath).forEach(element => {
+	filePaths(filePath).forEach(element => {
 		var finalDestinationPath = path.join(destinationPath, `${path.basename(element, path.extname(element))}.${format}`);
 		ps.addCommand(`[System.Drawing.Icon]::ExtractAssociatedIcon('${element}').ToBitmap().Save('${finalDestinationPath}','${format}')`)
 	});
