@@ -1,6 +1,6 @@
 {
   "name": "file-icon-extractor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extract icons from files.",
   "main": "index.js",
   "scripts": {
