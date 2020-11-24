@@ -1,6 +1,6 @@
 # file-icon-extractor
 
- Extract icons from programs.
+ Extract icons from files.
 
 ---
 
@@ -49,10 +49,10 @@ icon.extract(programs, "C:\\Users\\USERNAME\\Documents", "jpeg");
 
 | Platform | Details                                                                                                                                              |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Windows: | Support has been tested and confirmed on Windows as of `v1.0.1` for any filetype with an icon association in `explorer`, this includes `.exe` files. |
-| Linux:   | Theoretically support should exist; however as of `v1.0.1` this has not yet been thoroughly tested.                                                  |
-| Mac OS:  | Theoretically support should exist; however as of `v1.0.1` this has not yet been thoroughly tested.                                                  |
+| Windows: | Support has been tested and confirmed on Windows as of [`v1.0.1`](https://github.com/kevinuulong/file-icon-extractor/releases/tag/v1.0.1) for any filetype with an icon association in `explorer`, this includes `.exe` files. |
+| Linux:   | Theoretically support should exist; however, as of [`v1.0.1`](https://github.com/kevinuulong/file-icon-extractor/releases/tag/v1.0.1) this has not yet been thoroughly tested.                                                  |
+| Mac OS:  | Theoretically support should exist; however, as of [`v1.0.1`](https://github.com/kevinuulong/file-icon-extractor/releases/tag/v1.0.1) this has not yet been thoroughly tested.                                                  |
 
 ### Issues
 
-Please submit any issues through [the issues tab on GitHub]([Issues · kevinuulong/file-icon-extractor · GitHub](https://github.com/kevinuulong/file-icon-extractor/issues)).
+Please submit any issues through [the issues tab on GitHub](https://github.com/kevinuulong/file-icon-extractor/issues).
