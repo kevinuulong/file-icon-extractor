@@ -9,7 +9,7 @@ function registerShell() {
 	});
 }
 
-module.export = function extract(filePath, destinationPath, format = "png") {
+module.exports = function extract(filePath, destinationPath, format = "png") {
 	const filePaths = filePath => [].concat(filePath),
 		ps = registerShell();
 	ps.addCommand(`Add-Type -AssemblyName System.Drawing`)
