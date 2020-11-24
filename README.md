@@ -49,9 +49,9 @@ icon.extract(programs, "C:\\Users\\USERNAME\\Documents", "jpeg");
 
 | Platform | Details                                                                                                                                              |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Windows: | Support has been tested and confirmed on Windows as of [`v1.0.3`](https://github.com/kevinuulong/file-icon-extractor/releases/tag/v1.0.3) for any filetype with an icon association in `explorer`, this includes `.exe` files. |
-| Linux:   | Theoretically support should exist; however, as of [`v1.0.3`](https://github.com/kevinuulong/file-icon-extractor/releases/tag/v1.0.3) this has not yet been thoroughly tested.                                                  |
-| Mac OS:  | Theoretically support should exist; however, as of [`v1.0.3`](https://github.com/kevinuulong/file-icon-extractor/releases/tag/v1.0.3) this has not yet been thoroughly tested.                                                  |
+| Windows: | Support has been tested and confirmed on Windows as of [`v1.0.4`](https://github.com/kevinuulong/file-icon-extractor/releases/tag/v1.0.4) for any filetype with an icon association in `explorer`, this includes `.exe` files. |
+| Linux:   | Theoretically support should exist; however, as of [`v1.0.4`](https://github.com/kevinuulong/file-icon-extractor/releases/tag/v1.0.4) this has not yet been thoroughly tested.                                                  |
+| Mac OS:  | Theoretically support should exist; however, as of [`v1.0.4`](https://github.com/kevinuulong/file-icon-extractor/releases/tag/v1.0.4) this has not yet been thoroughly tested.                                                  |
 
 ### Issues
 
