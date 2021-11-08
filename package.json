@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/kevinuulong/file-icon-extractor#readme",
   "dependencies": {
-    "node-powershell": "^4.0.0"
+    "node-powershell": "^5.0.0"
   }
 }
